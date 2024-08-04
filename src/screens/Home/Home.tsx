@@ -1,10 +1,10 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import { styles } from "./Style";
 import { Logo } from "../../components/Logo/Logo";
 import { BatTextInput } from "../../components/BatTextInput/BatTextInput";
-
+import { BatButton } from "../../components/BatButton/BatButton";
 
 export const Home = () => {
     return (
@@ -12,11 +12,11 @@ export const Home = () => {
             <View style={styles.logoContaier}>
                 <Logo />
             </View>
-            <View>
-                <BatTextInput />
+
+            <View style={styles.inputTextContainer}>
+                <BatButton />
             </View>
-            <Text>Home Screen</Text>
-            <StatusBar style="auto" />
+            <StatusBar style="light" />
         </View>
     );
 }
